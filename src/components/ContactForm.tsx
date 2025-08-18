@@ -1,10 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { Card } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
+import { Facebook, Instagram, Linkedin, ArrowRight } from 'lucide-react';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -33,96 +30,113 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="bg-gradient-section py-20">
+    <section className="bg-dark-bg py-20 relative overflow-hidden">
+      {/* Social Icons - Fixed Position */}
+      <div className="fixed right-8 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 z-10">
+        <Button 
+          variant="social" 
+          size="lg"
+          className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20"
+          aria-label="Follow us on Facebook"
+        >
+          <Facebook className="h-5 w-5 text-white" />
+        </Button>
+        
+        <Button 
+          variant="social" 
+          size="lg"
+          className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20"
+          aria-label="Follow us on Instagram"
+        >
+          <Instagram className="h-5 w-5 text-white" />
+        </Button>
+        
+        <Button 
+          variant="social" 
+          size="lg"
+          className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20"
+          aria-label="Connect with us on LinkedIn"
+        >
+          <Linkedin className="h-5 w-5 text-white" />
+        </Button>
+      </div>
+
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Get Started – Get In Touch With Us
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-16">
+            <p className="text-cyan text-lg font-medium mb-4">Get Started</p>
+            <h2 className="text-5xl font-bold text-white mb-6 leading-tight">
+              Get In Touch With Us.<br />
+              We're Here To Assist You.
             </h2>
-            <p className="text-xl text-white/80">
-              We're Here to Assist You.
-            </p>
           </div>
 
-          <Card className="bg-card-dark border-cyan/20 p-8 shadow-elegant">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-card-dark-foreground font-medium">
-                    Your Name
-                  </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                    className="bg-dark-surface border-cyan/30 text-white placeholder:text-white/50 focus:border-cyan focus:ring-cyan/50"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-card-dark-foreground font-medium">
-                    Email Address
-                  </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="bg-dark-surface border-cyan/30 text-white placeholder:text-white/50 focus:border-cyan focus:ring-cyan/50"
-                    placeholder="Enter your email address"
-                  />
-                </div>
+          <form onSubmit={handleSubmit} className="space-y-12">
+            {/* Input Fields Grid */}
+            <div className="grid lg:grid-cols-3 gap-8">
+              <div className="relative">
+                <input
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors"
+                  placeholder="Your Name"
+                />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="phone" className="text-card-dark-foreground font-medium">
-                  Phone Number (optional)
-                </Label>
-                <Input
+              <div className="relative">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors"
+                  placeholder="Email Address"
+                />
+              </div>
+
+              <div className="relative">
+                <input
                   id="phone"
                   name="phone"
                   type="tel"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="bg-dark-surface border-cyan/30 text-white placeholder:text-white/50 focus:border-cyan focus:ring-cyan/50"
-                  placeholder="Enter your phone number"
+                  className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors"
+                  placeholder="Phone Number (optional)"
                 />
               </div>
+            </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-card-dark-foreground font-medium">
-                  Message
-                </Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  rows={5}
-                  className="bg-dark-surface border-cyan/30 text-white placeholder:text-white/50 focus:border-cyan focus:ring-cyan/50 resize-none"
-                  placeholder="Tell us about your project or how we can help you..."
-                />
-              </div>
+            {/* Message Field */}
+            <div className="relative">
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                rows={4}
+                className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors resize-none"
+                placeholder="Message"
+              />
+            </div>
 
-              <div className="flex justify-center pt-4">
-                <Button 
-                  type="submit" 
-                  variant="cta" 
-                  size="lg"
-                  className="px-8 py-4 text-lg"
-                >
-                  👉 Leave Us a Message
-                </Button>
-              </div>
-            </form>
-          </Card>
+            {/* Submit Button */}
+            <div className="pt-8">
+              <Button 
+                type="submit" 
+                className="bg-cyan hover:bg-cyan-bright text-dark-bg font-semibold text-lg px-12 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-glow-cyan"
+              >
+                Leave us a Message
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
