@@ -51,7 +51,7 @@ const ContactForm = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
-            <p className="text-cyan text-lg font-medium mb-4">Get Started</p>
+            <p className="text-lg font-medium mb-4 text-sky-400">Get Started</p>
             <h2 className="text-5xl font-bold text-white mb-6 leading-tight">
               Get In Touch With Us.<br />
               We're Here To Assist You.
@@ -81,7 +81,7 @@ const ContactForm = () => {
 
             {/* Submit Button */}
             <div className="pt-8 py-0">
-              <Button type="submit" className="text-dark-bg font-semibold text-lg px-12 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-glow-cyan py-[32px] bg-sky-500 hover:bg-sky-400">
+              <Button type="submit" className="text-dark-bg font-semibold text-lg px-12 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-glow-cyan py-[32px] bg-sky-500 hover:bg-sky-400 text-gray-800">
                 Leave us a Message
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
