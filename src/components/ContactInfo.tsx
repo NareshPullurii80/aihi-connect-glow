@@ -1,103 +1,38 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-import officeMapHq from '@/assets/office-map-hq.jpg';
-import officeMapBranch from '@/assets/office-map-branch.jpg';
-
 const ContactInfo = () => {
   return (
     <section className="bg-background py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Contact Info Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">
-              We Are Always Happy to Assist You
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-              <div className="flex items-center justify-center space-x-3">
-                <Mail className="h-6 w-6 text-teal" />
-                <div>
-                  <p className="text-sm text-muted-foreground">Email Address</p>
-                  <p className="font-medium text-foreground">help@aihicloud.com</p>
-                </div>
+          <p className="text-muted-foreground text-lg font-medium mb-6">Contact Info</p>
+          
+          <div className="grid lg:grid-cols-3 gap-8 items-start">
+            {/* Main Heading */}
+            <div className="lg:col-span-1">
+              <h2 className="text-4xl font-bold text-foreground leading-tight">
+                We Are Always Happy To Assist You
+              </h2>
+            </div>
+
+            {/* Contact Details */}
+            <div className="lg:col-span-2 grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  Email Address
+                </h3>
+                <p className="text-lg text-foreground">
+                  help@aihicloud.com
+                </p>
               </div>
               
-              <div className="flex items-center justify-center space-x-3">
-                <Phone className="h-6 w-6 text-teal" />
-                <div>
-                  <p className="text-sm text-muted-foreground">Contact Number</p>
-                  <p className="font-medium text-foreground">+91 9876543210</p>
-                </div>
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  Contact Number
+                </h3>
+                <p className="text-lg text-foreground">
+                  +91 9876543210
+                </p>
               </div>
             </div>
-          </div>
-
-          {/* Office Locations */}
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Headquarters */}
-            <Card className="p-8 shadow-elegant">
-              <div className="mb-6">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Visit Our Office – Headquarters
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Get expert guidance by visiting our office for personalized, face-to-face assistance with our consultants.
-                </p>
-              </div>
-
-              <div className="flex items-start space-x-3 mb-6">
-                <MapPin className="h-5 w-5 text-teal mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-foreground mb-2">Our Address</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    4th Floor, Eashan Arcade, Plot no 3-164, Trendz Arcade, 
-                    Kavuri Hills Road, Doctor's Colony, Hyderabad, Telangana 500033.
-                  </p>
-                </div>
-              </div>
-
-              <div className="rounded-lg overflow-hidden">
-                <img 
-                  src={officeMapHq} 
-                  alt="AIHI Headquarters Location Map" 
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-            </Card>
-
-            {/* Branch Office */}
-            <Card className="p-8 shadow-elegant">
-              <div className="mb-6">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Visit Our Office – Branch Office
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  For your convenience, connect with us at our additional location.
-                </p>
-              </div>
-
-              <div className="flex items-start space-x-3 mb-6">
-                <MapPin className="h-5 w-5 text-teal mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-foreground mb-2">Our Address</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    4th Floor, Sridevi Nilayam, Plot no 38, near JNTU Metro Station,
-                    Back side lane of Pista House, Sardar Patel Nagar,
-                    IDPL Staff Cooperative Housing Society, Kukatpally Housing Board Colony,
-                    Kukatpally, Hyderabad, Telangana 500085.
-                  </p>
-                </div>
-              </div>
-
-              <div className="rounded-lg overflow-hidden">
-                <img 
-                  src={officeMapBranch} 
-                  alt="AIHI Branch Office Location Map" 
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-            </Card>
           </div>
         </div>
       </div>
