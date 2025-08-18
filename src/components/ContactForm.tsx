@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { Facebook, Instagram, Linkedin, ArrowRight } from 'lucide-react';
-
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -10,53 +9,41 @@ const ContactForm = () => {
     phone: '',
     message: ''
   });
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
     toast({
       title: "Message Sent!",
-      description: "Thank you for contacting AIHI. We'll get back to you soon.",
+      description: "Thank you for contacting AIHI. We'll get back to you soon."
     });
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
   };
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-
-  return (
-    <section className="bg-dark-bg py-20 relative overflow-hidden">
+  return <section className="bg-dark-bg py-20 relative overflow-hidden">
       {/* Social Icons - Fixed Position */}
       <div className="fixed right-8 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 z-10">
-        <Button 
-          variant="social" 
-          size="lg"
-          className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20"
-          aria-label="Follow us on Facebook"
-        >
+        <Button variant="social" size="lg" className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20" aria-label="Follow us on Facebook">
           <Facebook className="h-5 w-5 text-white" />
         </Button>
         
-        <Button 
-          variant="social" 
-          size="lg"
-          className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20"
-          aria-label="Follow us on Instagram"
-        >
+        <Button variant="social" size="lg" className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20" aria-label="Follow us on Instagram">
           <Instagram className="h-5 w-5 text-white" />
         </Button>
         
-        <Button 
-          variant="social" 
-          size="lg"
-          className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20"
-          aria-label="Connect with us on LinkedIn"
-        >
+        <Button variant="social" size="lg" className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20" aria-label="Connect with us on LinkedIn">
           <Linkedin className="h-5 w-5 text-white" />
         </Button>
       </div>
@@ -75,63 +62,26 @@ const ContactForm = () => {
             {/* Input Fields Grid */}
             <div className="grid lg:grid-cols-3 gap-8">
               <div className="relative">
-                <input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors"
-                  placeholder="Your Name"
-                />
+                <input id="name" name="name" value={formData.name} onChange={handleInputChange} required className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors" placeholder="Your Name" />
               </div>
 
               <div className="relative">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors"
-                  placeholder="Email Address"
-                />
+                <input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} required className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors" placeholder="Email Address" />
               </div>
 
               <div className="relative">
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors"
-                  placeholder="Phone Number (optional)"
-                />
+                <input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors" placeholder="Phone Number (optional)" />
               </div>
             </div>
 
             {/* Message Field */}
             <div className="relative">
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                required
-                rows={4}
-                className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors resize-none"
-                placeholder="Message"
-              />
+              <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} required rows={4} className="w-full bg-transparent border-0 border-b-2 border-white/30 text-white text-lg py-4 px-0 placeholder:text-white/50 focus:outline-none focus:border-cyan transition-colors resize-none" placeholder="Message" />
             </div>
 
             {/* Submit Button */}
             <div className="pt-8">
-              <Button 
-                type="submit" 
-                className="bg-cyan hover:bg-cyan-bright text-dark-bg font-semibold text-lg px-12 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-glow-cyan"
-              >
+              <Button type="submit" className="bg-cyan hover:bg-cyan-bright text-dark-bg font-semibold text-lg px-12 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-glow-cyan py-[32px]">
                 Leave us a Message
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -139,8 +89,6 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactForm;

@@ -1,6 +1,5 @@
 const ContactInfo = () => {
-  return (
-    <section className="bg-background py-20">
+  return <section className="bg-background py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-muted-foreground text-lg font-medium mb-6">Contact Info</p>
@@ -15,7 +14,7 @@ const ContactInfo = () => {
 
             {/* Contact Details */}
             <div className="lg:col-span-2 grid md:grid-cols-2 gap-8">
-              <div>
+              <div className="px-[16px]">
                 <h3 className="text-xl font-semibold text-foreground mb-2">
                   Email Address
                 </h3>
@@ -24,7 +23,7 @@ const ContactInfo = () => {
                 </p>
               </div>
               
-              <div>
+              <div className="px-[16px]">
                 <h3 className="text-xl font-semibold text-foreground mb-2">
                   Contact Number
                 </h3>
@@ -36,8 +35,6 @@ const ContactInfo = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactInfo;
