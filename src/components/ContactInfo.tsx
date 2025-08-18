@@ -1,5 +1,5 @@
 const ContactInfo = () => {
-  return <section className="bg-background py-20">
+  return <section className="bg-background py-[40px]">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-muted-foreground text-lg font-medium mb-6">Contact Info</p>
