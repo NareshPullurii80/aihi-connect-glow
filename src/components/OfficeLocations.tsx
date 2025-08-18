@@ -50,12 +50,7 @@ const OfficeLocations = () => {
                 <MapPin className="h-5 w-5 text-teal mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-foreground mb-2">Our Address</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    4th Floor, Sridevi Nilayam, Plot no 38, near JNTU Metro Station,
-                    Back side lane of Pista House, Sardar Patel Nagar,
-                    IDPL Staff Cooperative Housing Society, Kukatpally Housing Board Colony,
-                    Kukatpally, Hyderabad, Telangana 500085.
-                  </p>
+                  <p className="text-muted-foreground leading-relaxed">4th Floor, Sridevi Nilayam, Plot no 38, near JNTU Metro Station, Back side lane of Pista House, Kukatpally, Hyderabad, Telangana 500085.</p>
                 </div>
               </div>
 
