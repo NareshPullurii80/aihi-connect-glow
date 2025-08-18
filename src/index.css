@@ -8,11 +8,16 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* AIHI Brand Colors */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    --dark-bg: 220 26% 8%;
+    --dark-surface: 220 26% 12%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
+    --card-dark: 220 26% 12%;
+    --card-dark-foreground: 210 40% 98%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
@@ -20,21 +25,39 @@ All colors MUST be HSL.
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
 
+    /* AIHI Accent Colors */
+    --teal: 195 100% 50%;
+    --cyan: 174 76% 66%;
+    --cyan-bright: 174 100% 66%;
+
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 174 76% 66%;
+    --accent-foreground: 220 26% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 195 100% 50%;
+
+    /* AIHI Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(240 73% 25%), hsl(280 60% 30%));
+    --gradient-section: linear-gradient(to bottom, hsl(220 26% 8%), hsl(220 26% 12%));
+    --gradient-card: linear-gradient(145deg, hsl(220 26% 12%), hsl(220 26% 15%));
+    --gradient-button: linear-gradient(135deg, hsl(195 100% 50%), hsl(174 76% 66%));
+    --gradient-button-hover: linear-gradient(135deg, hsl(195 100% 60%), hsl(174 76% 76%));
+
+    /* Effects */
+    --glow-cyan: 0 0 20px hsl(174 76% 66% / 0.5);
+    --glow-teal: 0 0 30px hsl(195 100% 50% / 0.3);
+    --shadow-elegant: 0 10px 40px hsl(220 26% 8% / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
