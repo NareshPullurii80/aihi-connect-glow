@@ -2,10 +2,8 @@ import { MapPin } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import officeMapHq from '@/assets/office-map-hq.jpg';
 import officeMapBranch from '@/assets/office-map-branch.jpg';
-
 const OfficeLocations = () => {
-  return (
-    <section className="bg-secondary/30 py-20">
+  return <section className="bg-secondary/30 py-[40px]">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Office Locations */}
@@ -33,11 +31,7 @@ const OfficeLocations = () => {
               </div>
 
               <div className="rounded-lg overflow-hidden">
-                <img 
-                  src={officeMapHq} 
-                  alt="AIHI Headquarters Location Map" 
-                  className="w-full h-48 object-cover"
-                />
+                <img src={officeMapHq} alt="AIHI Headquarters Location Map" className="w-full h-48 object-cover" />
               </div>
             </Card>
 
@@ -66,18 +60,12 @@ const OfficeLocations = () => {
               </div>
 
               <div className="rounded-lg overflow-hidden">
-                <img 
-                  src={officeMapBranch} 
-                  alt="AIHI Branch Office Location Map" 
-                  className="w-full h-48 object-cover"
-                />
+                <img src={officeMapBranch} alt="AIHI Branch Office Location Map" className="w-full h-48 object-cover" />
               </div>
             </Card>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default OfficeLocations;
