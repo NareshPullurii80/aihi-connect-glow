@@ -81,7 +81,7 @@ const ContactForm = () => {
 
             {/* Submit Button */}
             <div className="pt-8">
-              <Button type="submit" className="bg-cyan hover:bg-cyan-bright text-dark-bg font-semibold text-lg px-12 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-glow-cyan py-[32px]">
+              <Button type="submit" className="text-dark-bg font-semibold text-lg px-12 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-glow-cyan py-[32px] bg-sky-500 hover:bg-sky-400">
                 Leave us a Message
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
