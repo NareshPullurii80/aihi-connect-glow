@@ -1,8 +1,7 @@
 const ContactInfo = () => {
-  return <section 
-    className="py-[40px] bg-cover bg-center bg-no-repeat relative"
-    style={{ backgroundImage: `url(/lovable-uploads/b0cd311f-9f20-40c0-af27-9f704cd1a0f5.png)` }}
-  >
+  return <section className="py-[40px] bg-cover bg-center bg-no-repeat relative" style={{
+    backgroundImage: `url(/lovable-uploads/b0cd311f-9f20-40c0-af27-9f704cd1a0f5.png)`
+  }}>
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-muted-foreground text-lg font-medium mb-6">Contact Info</p>
@@ -30,9 +29,7 @@ const ContactInfo = () => {
                 <h3 className="text-xl font-semibold text-foreground mb-2">
                   Contact Number
                 </h3>
-                <p className="text-lg text-foreground">
-                  +91 9876543210
-                </p>
+                <p className="text-lg text-foreground">+91 9951180686</p>
               </div>
 
               <div className="px-[16px] md:col-span-2">
