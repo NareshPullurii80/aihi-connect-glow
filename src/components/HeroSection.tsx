@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/a8dc77a1-8b0c-40b2-bc68-8e2312505fdb.png" 
+                  src="/lovable-uploads/3de3ade9-80c2-4c22-83f4-638fe3fdeceb.png" 
                   alt="3D Communication Technology Headset" 
                   className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
                 />
