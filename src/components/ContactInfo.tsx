@@ -36,9 +36,8 @@ const ContactInfo = () => {
                 <h3 className="text-xl font-semibold text-foreground mb-2">
                   Address
                 </h3>
-                <p className="text-lg text-foreground">
-                  4th Floor, Eashan Arcade, Plot no 3-164, Trendz Arcade, Kavuri Hills Road, Doctor's Colony, Hyderabad, Telangana 500033
-                </p>
+                <p className="text-lg text-foreground">817 Blue Bell Trl,
+Plano, Texas - 75075</p>
               </div>
             </div>
           </div>
