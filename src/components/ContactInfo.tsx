@@ -1,5 +1,8 @@
 const ContactInfo = () => {
-  return <section className="bg-background py-[40px]">
+  return <section 
+    className="py-[40px] bg-cover bg-center bg-no-repeat relative"
+    style={{ backgroundImage: `url(/lovable-uploads/b0cd311f-9f20-40c0-af27-9f704cd1a0f5.png)` }}
+  >
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-muted-foreground text-lg font-medium mb-6">Contact Info</p>
