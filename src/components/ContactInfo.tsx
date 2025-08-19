@@ -7,7 +7,7 @@ const ContactInfo = () => {
           <div className="grid lg:grid-cols-3 gap-8 items-start">
             {/* Main Heading */}
             <div className="lg:col-span-1">
-              <h2 className="text-4xl font-bold text-foreground leading-tight">
+              <h2 className="text-4xl font-bold text-foreground leading-tight text-center">
                 We Are Always Happy To Assist You
               </h2>
             </div>
