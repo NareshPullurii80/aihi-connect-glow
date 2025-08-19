@@ -31,6 +31,15 @@ const ContactInfo = () => {
                   +91 9876543210
                 </p>
               </div>
+
+              <div className="px-[16px] md:col-span-2">
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  Address
+                </h3>
+                <p className="text-lg text-foreground">
+                  4th Floor, Eashan Arcade, Plot no 3-164, Trendz Arcade, Kavuri Hills Road, Doctor's Colony, Hyderabad, Telangana 500033
+                </p>
+              </div>
             </div>
           </div>
         </div>
