@@ -22,7 +22,7 @@ const HeroSection = () => {
                 <img 
                   src="/lovable-uploads/3de3ade9-80c2-4c22-83f4-638fe3fdeceb.png" 
                   alt="3D Communication Technology Headset" 
-                  className="w-full max-w-xs h-auto object-contain drop-shadow-2xl"
+                  className="w-[180px] h-[180px] object-contain drop-shadow-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan/20 to-teal/20 rounded-lg -z-10 blur-xl"></div>
               </div>
