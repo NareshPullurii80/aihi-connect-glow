@@ -2,7 +2,7 @@ import heroHeadset from '@/assets/hero-headset.jpg';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-hero min-h-[60vh] flex items-center">
+    <section className="bg-gradient-hero h-[360px] flex items-center">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
