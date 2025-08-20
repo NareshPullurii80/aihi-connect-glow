@@ -32,7 +32,7 @@ const ContactForm = () => {
       [e.target.name]: e.target.value
     });
   };
-  return <section className="bg-dark-bg py-20 relative overflow-hidden">
+  return <section className="bg-dark-bg relative overflow-hidden py-[40px]">
       {/* Social Icons - Fixed Position */}
       <div className="fixed right-8 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 z-10">
         <Button variant="social" size="lg" className="p-3 rounded-full bg-white/10 hover:bg-cyan/20 border-white/20" aria-label="Follow us on Facebook">
