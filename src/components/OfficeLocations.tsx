@@ -1,8 +1,6 @@
 import { MapPin } from 'lucide-react';
-
 const OfficeLocations = () => {
-  return (
-    <section className="py-16 bg-background">
+  return <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8">
@@ -18,7 +16,7 @@ const OfficeLocations = () => {
               <div className="mb-8">
                 <div className="flex items-start gap-3 mb-3">
                   <div className="flex items-center gap-2">
-                    <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span className="text-xl">🇮🇳</span>
                   </div>
                   <div>
@@ -52,7 +50,7 @@ const OfficeLocations = () => {
               <div className="mb-8">
                 <div className="flex items-start gap-3 mb-3">
                   <div className="flex items-center gap-2">
-                    <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span className="text-xl">🇺🇸</span>
                   </div>
                   <div>
@@ -76,7 +74,6 @@ const OfficeLocations = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default OfficeLocations;
