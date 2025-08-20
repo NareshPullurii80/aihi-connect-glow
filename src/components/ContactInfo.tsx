@@ -1,44 +1,38 @@
+import { Mail, Phone } from 'lucide-react';
+
 const ContactInfo = () => {
-  return <section className="py-[40px] bg-cover bg-center bg-no-repeat relative" style={{
+  return <section className="py-[80px] bg-cover bg-center bg-no-repeat relative" style={{
     backgroundImage: `url(/lovable-uploads/b0cd311f-9f20-40c0-af27-9f704cd1a0f5.png)`
   }}>
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-muted-foreground text-lg font-medium mb-6">Contact Info</p>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-foreground mb-16">
+            We Are Always Happy to Assist You
+          </h2>
           
-          <div className="grid lg:grid-cols-3 gap-8 items-start">
-            {/* Main Heading */}
-            <div className="lg:col-span-1">
-              <h2 className="text-4xl font-bold text-foreground leading-tight">
-                We Are Always Happy To Assist You
-              </h2>
+          <div className="grid md:grid-cols-2 gap-12 max-w-2xl mx-auto">
+            {/* Email */}
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mb-4">
+                <Mail className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-medium text-muted-foreground mb-2">
+                Email Address
+              </h3>
+              <p className="text-xl font-semibold text-foreground">
+                help@aihicloud.com
+              </p>
             </div>
-
-            {/* Contact Details */}
-            <div className="lg:col-span-2 grid md:grid-cols-2 gap-8">
-              <div className="px-[16px]">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Email Address
-                </h3>
-                <p className="text-lg text-foreground">
-                  help@aihicloud.com
-                </p>
+            
+            {/* Phone */}
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mb-4">
+                <Phone className="w-6 h-6 text-white" />
               </div>
-              
-              <div className="px-[16px]">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Contact Number
-                </h3>
-                <p className="text-lg text-foreground">+91 9951180686</p>
-              </div>
-
-              <div className="px-[16px] md:col-span-2">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Address
-                </h3>
-                <p className="text-lg text-foreground">817 Blue Bell Trl,
-Plano, Texas - 75075</p>
-              </div>
+              <h3 className="text-lg font-medium text-muted-foreground mb-2">
+                Contact Number
+              </h3>
+              <p className="text-xl font-semibold text-foreground">+91 9876543210</p>
             </div>
           </div>
         </div>
