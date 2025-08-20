@@ -36,9 +36,7 @@ const OfficeLocations = () => {
               
               <div>
                 <h4 className="text-xl font-semibold text-foreground mb-3">Our Address - Branch Office</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  4th Floor, Sridevi Nilayam, plot no 38, near Jntu Metro Station, back side lane of Pista house, Sardar Patel Nagar, IDPL Staff Cooperative Housing Society, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500085
-                </p>
+                <p className="text-muted-foreground leading-relaxed">817 Blue Bell Trl, Plano, Texas - 75075</p>
               </div>
             </div>
           </div>
