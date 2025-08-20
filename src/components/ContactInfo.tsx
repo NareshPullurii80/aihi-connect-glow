@@ -1,16 +1,14 @@
-import { Mail, Phone } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const ContactInfo = () => {
-  return <section className="py-[80px] bg-cover bg-center bg-no-repeat relative" style={{
-    backgroundImage: `url(/lovable-uploads/b0cd311f-9f20-40c0-af27-9f704cd1a0f5.png)`
-  }}>
+  return <section className="py-[80px]">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-foreground mb-16">
             We Are Always Happy to Assist You
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-12 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-12 max-w-3xl mx-auto">
             {/* Email */}
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mb-4">
@@ -33,6 +31,19 @@ const ContactInfo = () => {
                 Contact Number
               </h3>
               <p className="text-xl font-semibold text-foreground">+91 9876543210</p>
+            </div>
+            
+            {/* Address */}
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mb-4">
+                <MapPin className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-medium text-muted-foreground mb-2">
+                Address
+              </h3>
+              <p className="text-xl font-semibold text-foreground text-center">
+                817 Blue Bell Trl,<br />Plano, Texas - 75075
+              </p>
             </div>
           </div>
         </div>
