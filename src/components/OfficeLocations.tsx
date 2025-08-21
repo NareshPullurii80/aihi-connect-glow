@@ -9,9 +9,7 @@ const OfficeLocations = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Visit Our Office – Headquarters
               </h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                Get expert guidance by visiting our office for personalized, face-to-face assistance with our consultants.
-              </p>
+              <p className="text-muted-foreground mb-8 leading-relaxed">Get expert guidance by visiting our office for personalized, face-to-face assistance.</p>
               
               <div className="mb-8">
                 <div className="flex items-start gap-3 mb-3">
@@ -55,9 +53,8 @@ const OfficeLocations = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Our Address</h4>
-                    <p className="text-muted-foreground leading-relaxed">
-                      4th Floor, Sridevi Nilayam, Plot no 38, near JNTU Metro Station, Back side lane of Pista House, Sardar Patel Nagar, IDPL Staff Cooperative Housing Society, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500085.
-                    </p>
+                    <p className="text-muted-foreground leading-relaxed">817 Blue Bell Trl,
+Plano, Texas - 75075</p>
                   </div>
                 </div>
               </div>
