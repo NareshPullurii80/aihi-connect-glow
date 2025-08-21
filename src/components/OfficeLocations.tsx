@@ -9,7 +9,7 @@ const OfficeLocations = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Visit Our Office – Headquarters
               </h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">Get expert guidance by visiting our office for personalized, face-to-face assistance.</p>
+              <p className="text-muted-foreground mb-8 leading-relaxed">Get expert guidance by visiting our office for personalized assistance.</p>
               
               <div className="mb-8">
                 <div className="flex items-start gap-3 mb-3">
